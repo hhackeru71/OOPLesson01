@@ -8,40 +8,43 @@ namespace OOPLesson1
 {
     class Person
     {
-       private string firstName;
-       private string lastName;
-       private int age;
+       private string _firstName; //ctr + rr / f2/ rename 
+       private string _lastName;
+       private int _age;
+
+
+        //הכימוס (encapsulation).
 
 
         //prop
         public string FirstName
         {
-            get { return firstName;}//מחזיר את המידע
-            set { firstName = value;}//השמה למשתנה
+            get { return _firstName;}//מחזיר את המידע
+            set { _firstName = value;}//השמה למשתנה
         }
 
         public string LastName
         {
-            set { lastName = value;}
+            set { _lastName = value;}
         }
 
         public int Age
         {
-            get { return age;}
+            get { return _age;}
             set
             {
                 if (value > 50)
                     return;
-                age = value;
+                _age = value;
             }
         }
 
-        
 
-        //public void Print()
-        //{
-        //    Console.WriteLine($"{firstName}{lastName}{age}");
-        //}
+
+        public void Print()
+        {
+            Console.WriteLine($"{_firstName}{_lastName}{_age}");
+        }
 
 
         //public int GetAge()
