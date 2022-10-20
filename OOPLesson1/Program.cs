@@ -10,8 +10,9 @@ namespace OOPLesson1
             ps.firstName = "yarin";
             ps.lastName = "sh";
             ps.age = 50;
-            ps.Print();
-            //שמדפיס את הגיל של המשתמש ע"י הפונקציה שמחזירה את הגיל של המשתמש
+             
+            Console.WriteLine(ps.GetAge());
+            Console.WriteLine(ps.Check());
             //להדפיס האם האורך של המחרוזת   יותר מ5 ע"י שימוש בפונקציה שבודקת
 
         }

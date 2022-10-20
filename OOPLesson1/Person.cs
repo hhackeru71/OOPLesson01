@@ -18,6 +18,19 @@ namespace OOPLesson1
         }
 
 
+        public int GetAge()
+        {
+            return age;
+        }
+
+        public bool Check()
+        {
+            return firstName.Length > 5;
+        }
+
+
+
+
 
         //פונקציה  שמחזירה את הגיל של המשתמש 
 
