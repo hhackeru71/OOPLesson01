@@ -7,12 +7,23 @@ namespace OOPLesson1
         static void Main(string[] args)
         {
             Person ps = new Person();
-            ps.firstName = "yarin";
-            ps.lastName = "sh";
-            ps.age = 50;
+            //ps.FirstName = "sdfsdf";
+            //Console.WriteLine(ps.FirstName);
+            //ps.LastName = "sdfdsf";
+            ps.Age = 60;
+            Console.WriteLine(ps.Age);
+            ps.Age = 40;
+            Console.WriteLine(ps.Age);
+
+
+           
+           
+            //ps.firstName = "yarin";
+            //ps.lastName = "sh";
+            //ps.age = 50;
              
-            Console.WriteLine(ps.GetAge());
-            Console.WriteLine(ps.Check());
+            //Console.WriteLine(ps.GetAge());
+            //Console.WriteLine(ps.Check());
             //להדפיס האם האורך של המחרוזת   יותר מ5 ע"י שימוש בפונקציה שבודקת
 
         }

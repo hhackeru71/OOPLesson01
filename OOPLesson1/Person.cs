@@ -8,25 +8,51 @@ namespace OOPLesson1
 {
     class Person
     {
-        public string firstName;
-        public string lastName;
-        public int age;
+       private string firstName;
+       private string lastName;
+       private int age;
 
-        public void Print()
+
+        //prop
+        public string FirstName
         {
-            Console.WriteLine($"{firstName}{lastName}{age}");
+            get { return firstName;}//מחזיר את המידע
+            set { firstName = value;}//השמה למשתנה
         }
 
-
-        public int GetAge()
+        public string LastName
         {
-            return age;
+            set { lastName = value;}
         }
 
-        public bool Check()
+        public int Age
         {
-            return firstName.Length > 5;
+            get { return age;}
+            set
+            {
+                if (value > 50)
+                    return;
+                age = value;
+            }
         }
+
+        
+
+        //public void Print()
+        //{
+        //    Console.WriteLine($"{firstName}{lastName}{age}");
+        //}
+
+
+        //public int GetAge()
+        //{
+        //    return age;
+        //}
+
+        //public bool Check()
+        //{
+        //    return firstName.Length > 5;
+        //}
 
 
 
